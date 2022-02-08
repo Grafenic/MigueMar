@@ -24,7 +24,8 @@ body{
 }
 
 header{
-    background-color: #606c38;
+    /* background-color: #606c38; */
+    background-image: linear-gradient(#275805,#606c38);
     position: sticky;
     top: 0px;
     display: grid;
@@ -51,7 +52,6 @@ nav {
     position: relative;
     font-size: 5vh;
     text-align: center;
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -124,11 +124,10 @@ footer{
 
 .main__sectionOne__divOne {
     background-image:Url("../Imagenes/fondo\ 1\ imagen\ index.jpg");
-    height: 90vh;
+    height: 100vh;
     background-repeat: repeat;
     background-size: cover;
-    
-}
+    }
 
 @media screen and (max-width: 768px) {
     .main__sectionOne__divOne{
@@ -150,11 +149,9 @@ footer{
 }
 
 .main__sectionOne__accesorios{
-    background-image:Url("../Imagenes/fondo-2-accesorios.jpg");
-    height: 80vh;
+    background-image:Url("../Imagenes/fondo-2-accesorios.jpg");    
     background-repeat: repeat;
     background-size: cover;
-    display: grid;
 }
 
 .main__sectionOne__alimentos{
@@ -189,7 +186,7 @@ h2.tituloFondo{
     padding-top: 55vh;
     position: absolute;
     font-size: 2vw;
-    -webkit-text-stroke: 1px #dda25eab;
+    -webkit-text-stroke: 1px #000000ab;
 }
 
 .main__sectionOne__divTwo{
@@ -470,12 +467,17 @@ img.veterinario--png{
 }
 
 .contenedor__fotosDeLaSemana{
-    display: inline-block;
+    display: grid;
+    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
     width: 100vw;
-    margin-left: 4vw;
-    margin-right: 20vw;
+    justify-content: center;
 }
-
+@media only screen and(max-width: 960px){
+    .contenedor__fotosDeLaSemana{
+        grid-template-columns: 33vw 33vw 33vw;
+        grid-auto-rows: 20vw;
+    }
+}
 img.contenedor__fotosDeLaSemana--img{
     width: 16vw;
     height: 12vw;
@@ -490,7 +492,7 @@ img.contenedor__fotosDeLaSemana--img{
 }
 
 .videoDeLaSemana__contenedor{
-    outline: 2px black solid;
+    transform: scale(0.9,0.9);
 }
 
 .videoDeLaSemana--video{

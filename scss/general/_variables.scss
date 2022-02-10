@@ -1,0 +1,59 @@
+$color-primario:#275805;
+$color-secundario: #dda15e;
+$color-terciario:#606c38;
+$color-cuaternario: #bc6c25;
+
+@mixin lista-hyf {
+    display: inline-flex;
+    width: 15%;
+    position: relative;
+    color:$color-secundario;
+}
+
+@mixin lista-hyf-media {
+    @include lista-hyf;
+        @media screen and (max-width:960px) {
+                display: grid;
+                font-size: 6vw;
+                width: 100%;
+            }
+    }
+
+    @mixin font-size-hyf-media {
+    @media screen and (max-width:960px) {
+        display: grid;
+        font-size: 6vw;
+        width: 100%;
+    }
+}
+@mixin animacion-subrayado {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: 1s;    
+}
+@mixin h2-estandar {
+    display: grid;
+    font-size: 3vw;
+    color:#606c38;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@mixin h2-estandar-media {
+    @include h2-estandar
+    @media screen and (max-width: 960px) {
+        .h2{
+        font-size: 6vw;
+        }    
+    }
+}
+@mixin contenedor-estandar {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}

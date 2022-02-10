@@ -1,0 +1,75 @@
+.main__sectionOne__divOne {
+    background-image:Url("../Imagenes/fondo_1_imagen_index.jpg");
+    height: 120vh;
+    background-repeat: repeat;
+    background-size: cover;
+    @media screen and (max-width: 768px) {
+        &{
+            background-image:Url("../Imagenes/fondo_1_imagen_index_720px.jpg");
+        }    
+    }
+    .containter_ulAccesorios{
+        @include contenedor-estandar
+        @media screen and (max-width: 960px) {
+            &--text{
+                width: 100%;
+                font-size: 6vw;
+            }   
+        }
+        @media screen and (max-width: 960px) {
+            &{
+                top: 5vw;
+                grid-template-columns: 15vw 15vw 15vw;
+                grid-template-rows: 9vw 9vw 9vw 9vw 9vw;
+                grid-column-gap: 12vw ;
+                grid-row-gap: 12vw ;
+            }
+        }
+        grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+        grid-template-rows: 9vw 9vw 9vw;
+        grid-row-gap: 3vw ;
+        grid-column-gap: 1vw;
+        &--textart{
+            display: inline-block;
+            background-color: rgba(107, 79, 2, 0.11);
+            color: $color-terciario;
+            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+            border-radius: 6px;
+            margin: 0.5vw;
+            text-align: center;
+            padding-left: 0px;
+            width: 10vw;
+            font-size: 1.5vw;
+            &:hover {
+                transform: scale(1.2,1.2);
+                transition: 0.75s;
+            }
+        }
+        @media screen and (max-width: 960px) {
+            &--textart{
+                align-items: center;
+                justify-content: center;
+                width: 20vw;
+                font-size: 3vw;
+            }   
+        }
+        .imgArticle__accesorios{
+            width: 6vw;
+            height: 6vw;
+            @media screen and (max-width: 960px) {
+                &{
+                    height: 10vw;
+                    width: 10vw;
+                }
+            }
+            &:hover {
+                transform: scale(1.2,1.2);
+                transition: 0.75s;
+            }
+        }
+    }
+}
+
+h2{
+    @include h2-estandar-media;
+}

@@ -122,18 +122,6 @@ footer{
     display: grid;
 }
 
-.main__sectionOne__divOne {
-    background-image:Url("../Imagenes/fondo_1_imagen_index.jpg");
-    height: 100vh;
-    background-repeat: repeat;
-    background-size: cover;
-    }
-
-@media screen and (max-width: 768px) {
-    .main__sectionOne__divOne{
-        background-image:Url("../Imagenes/fondo_1_imagen_index_720px.jpg");
-    }    
-}
 .main__sectionOne__divOne__alimentos {
     background-image:Url("../Imagenes/fondo_1_imagen_index.jpg");
     height: 130vh;
@@ -366,6 +354,18 @@ input{
 
 /* Accesorios */
 
+.main__sectionOne__divOne {
+    background-image:Url("../Imagenes/fondo_1_imagen_index.jpg");
+    height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    }
+
+@media screen and (max-width: 768px) {
+    .main__sectionOne__divOne{
+        background-image:Url("../Imagenes/fondo_1_imagen_index_720px.jpg");
+    }    
+}
 
 .containter_ulAccesorios{
     display: grid;

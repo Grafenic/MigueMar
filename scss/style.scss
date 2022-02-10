@@ -1,1 +1,7 @@
-@import url(./general/_variables.scss);
+@import "./general/variables","./general/header&footer";
+@import "./paginas/index";
+@import "./paginas/accesorios";
+@import "./paginas/alimentos";
+@import "./paginas/salud";
+@import "./paginas/multimedia";
+

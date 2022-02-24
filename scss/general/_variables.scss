@@ -3,7 +3,12 @@ $color-secundario: #dda15e;
 $color-terciario:#606c38;
 $color-cuaternario: #bc6c25;
 
-
+$colores: (
+    primario:#275805,
+    secundario: #dda15e,
+    terciario: #606c38,
+    cuaternario: #bc6c25,
+);
 
 @mixin lista-hyf {
     display: inline-flex;
@@ -58,4 +63,11 @@ $color-cuaternario: #bc6c25;
     justify-items: center;
     align-items: center;
     position: relative;
+}
+
+%SeccionesIndex{
+    background-image:Url("../Imagenes/fondo-2-accesorios.jpg");    
+    height: 80vh;
+    background-repeat: repeat;
+    background-size: cover;
 }

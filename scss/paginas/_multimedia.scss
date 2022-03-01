@@ -1,0 +1,75 @@
+
+.main__sectionOne__divOne__accesorios {
+    background-image:Url("../Imagenes/fondo_1_imagen_index.jpg");
+    height: 130vh;
+    background-repeat: repeat;
+    background-size: cover;
+    @media screen and (max-width: 960px){
+        height: 170vh;
+    }
+}
+.contenedor__fotosDeLaSemana {
+    display: grid;
+    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+    width: 100vw;
+    justify-content: center;
+    @media screen and (max-width: 960px){
+        & {
+            grid-template-columns: 45vw 45vw;
+            grid-template-rows: 32vw 32vw 32vw;
+        }
+    }
+}
+.fotosDeLaSemana--text {
+    margin-top: 0.1vw;
+    margin-left: 4vw;
+    margin-bottom: 0.5vw;
+    -webkit-text-stroke: 1px #dda25eab;
+}
+img.contenedor__fotosDeLaSemana--img{
+    width: 16vw;
+    height: 12vw;
+    padding: 1vw;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+    border-radius: 6px;
+    @media screen and (max-width: 960px){
+        & {
+            width: 40vw;
+            height: 30vw;
+        }
+    }
+}
+.contenedor__fotosDeLaSemana--img:hover {
+    transform: scale(1.1,1.1);
+    transition: 0.75s;
+}
+.videoDeLaSemana--text {
+    margin-top: 1vw;
+    margin-left: 4vw;
+    -webkit-text-stroke: 1px #dda25eab;
+}
+h3 {
+    font-size: 2vw;
+    text-align: left;
+    color: #606c38;
+}
+.videoDeLaSemana--video{
+    display: grid;
+    margin: auto;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+    width: 30.24vw; 
+    height: 17.01vw;
+    @media screen and (max-width: 960px){
+        & {
+            width: 60.48vw;
+            height: 34.02vw;
+        }
+    }
+}   
+.btnContacto{
+    justify-content: center;
+    font-weight: 200;
+    color: $color-terciario;
+    text-shadow: 1px 1px 2px black, 0 0 1em;
+    margin: auto;
+}

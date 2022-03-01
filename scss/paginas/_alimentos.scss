@@ -1,0 +1,81 @@
+.main__sectionOne__divOne__alimentos {
+    background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
+    height: 200vh;
+    background-repeat: repeat;
+    background-size: cover;
+    @media screen and (max-width: 768px){
+        & {
+            background-image: Url("../Imagenes/fondo_1_imagen_index_720px.jpg");
+            height: 100vh;
+        }
+    }
+    .containter_ulAlimentos {
+        display: grid;
+        grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+        grid-template-rows: 9vw 9vw 9vw;
+        grid-column-gap: 2vw;
+        grid-row-gap: 1vw;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        @media screen and (max-width: 960px){
+            & {
+                grid-template-columns: 20vw 20vw 20vw 20vw;
+                grid-template-rows: 15vw 15vw 15vw 15vw;
+                grid-column-gap: 1vw;
+                grid-row-gap: 1vw;
+                width: 100%;
+                }
+        }
+        &--textart{
+            display: grid;
+            background-color: rgba(107, 79, 2, 0.11);
+            color: #606c38;
+            box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+            border-radius: 6px;
+            margin: 0.5vw;
+            text-align: center;
+            justify-items: center;
+            padding-left: 0px;
+            width: 10vw;
+            font-size: 1.4vw;
+            img.imgArticle {
+                width: 5vw;
+                height: 5vw;
+                @media screen and (max-width: 960px) {
+                    & {
+                        height: 10vw;
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+    }
+}
+form{
+    display: grid;
+    font-size: 2vw;
+    background-color: rgba(107, 79, 2, 0.11);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+    border-radius: 6px;
+    margin-top: 1vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    justify-content: center;
+    padding: 0vw;
+}
+@media screen and (max-width: 960px) {
+    form{
+        font-size: 3.5vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+input{
+    background-color: rgba(0, 0, 0, 0.062);
+}
+.containter_ulAlimentos--textart:hover, .imgArticle:hover, {
+    transform: scale(1.1,1.1);
+    transition: 0.75s;
+}

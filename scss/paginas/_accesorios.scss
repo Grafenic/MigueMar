@@ -72,4 +72,10 @@
 
 h2{
     @include h2-estandar-media;
+    @media screen {
+        
+    }
+}
+ul{
+    padding-left: 0;
 }

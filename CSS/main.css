@@ -12,23 +12,24 @@ html {
   padding: 0;
   font-family: sans-serif; }
 
+header {
+  position: sticky;
+  top: 0px;
+  display: grid;
+  z-index: 2; }
+  header nav {
+    display: grid;
+    bottom: 70px;
+    color: #dda15e;
+    position: sticky;
+    top: 0px;
+    width: 100%; }
+
 .index__grid__body {
   display: grid; }
   .index__grid__body .index__grid__header {
     display: grid;
     background-image: linear-gradient(#275805, #606c38); }
-    .index__grid__body .index__grid__header header {
-      position: sticky;
-      top: 0px;
-      display: grid;
-      z-index: 2; }
-      .index__grid__body .index__grid__header header nav {
-        display: grid;
-        bottom: 70px;
-        color: #dda15e;
-        position: sticky;
-        top: 0px;
-        width: 100%; }
     .index__grid__body .index__grid__header .button__block {
       display: grid;
       position: relative;
@@ -124,6 +125,12 @@ footer {
       footer .footer__section .footer__section__link:hover, footer .footer__section .footer__section__link:focus {
         background-size: 100% 2px; }
 
+h1 {
+  font-size: 6vh; }
+
+ul {
+  margin: 0; }
+
 .index__grid__body {
   display: grid; }
   .index__grid__body .main__sectionOne {
@@ -136,7 +143,7 @@ footer {
       .index__grid__body .main__sectionOne__divOne .main_sectionOne--text {
         display: grid;
         grid-template-columns: 50vw;
-        grid-template-rows: 20vw;
+        grid-template-rows: 12vw;
         justify-content: center;
         margin-top: 3vw;
         color: #606c38;
@@ -147,7 +154,13 @@ footer {
           .index__grid__body .main__sectionOne__divOne .main_sectionOne--text {
             font-size: 4vw;
             grid-template-columns: 80vw;
-            grid-template-rows: 40vw; } }
+            grid-template-rows: 30vw; } }
+      .index__grid__body .main__sectionOne__divOne .btnContacto {
+        justify-content: center;
+        font-weight: 200;
+        color: #606c38;
+        text-shadow: 1px 1px 2px black, 0 0 1em;
+        margin: auto; }
       .index__grid__body .main__sectionOne__divOne__two {
         display: grid;
         grid-template-columns: 15vw 15vw 15vw;
@@ -288,4 +301,198 @@ h2 {
   padding-bottom: 10px; }
   @media screen and (max-width: 960px) {
     h2 .h2 {
-      font-size: 6vw; } }
+      font-size: 10vw; } }
+
+ul {
+  padding-left: 0; }
+
+.main__sectionOne__divOne__alimentos {
+  background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
+  height: 200vh;
+  background-repeat: repeat;
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .main__sectionOne__divOne__alimentos {
+      background-image: Url("../Imagenes/fondo_1_imagen_index_720px.jpg");
+      height: 100vh; } }
+  .main__sectionOne__divOne__alimentos .containter_ulAlimentos {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    grid-template-rows: 9vw 9vw 9vw;
+    grid-column-gap: 2vw;
+    grid-row-gap: 1vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative; }
+    @media screen and (max-width: 960px) {
+      .main__sectionOne__divOne__alimentos .containter_ulAlimentos {
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        grid-template-rows: 15vw 15vw 15vw 15vw;
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw;
+        width: 100%; } }
+    .main__sectionOne__divOne__alimentos .containter_ulAlimentos--textart {
+      display: grid;
+      background-color: rgba(107, 79, 2, 0.11);
+      color: #606c38;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+      border-radius: 6px;
+      margin: 0.5vw;
+      text-align: center;
+      justify-items: center;
+      padding-left: 0px;
+      width: 10vw;
+      font-size: 1.4vw; }
+      .main__sectionOne__divOne__alimentos .containter_ulAlimentos--textart img.imgArticle {
+        width: 5vw;
+        height: 5vw; }
+        @media screen and (max-width: 960px) {
+          .main__sectionOne__divOne__alimentos .containter_ulAlimentos--textart img.imgArticle {
+            height: 10vw;
+            width: 10vw; } }
+
+form {
+  display: grid;
+  font-size: 2vw;
+  background-color: rgba(107, 79, 2, 0.11);
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+  border-radius: 6px;
+  margin-top: 1vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  justify-content: center;
+  padding: 0vw; }
+
+@media screen and (max-width: 960px) {
+  form {
+    font-size: 3.5vw;
+    margin-left: 5vw;
+    margin-right: 5vw; } }
+
+input {
+  background-color: rgba(0, 0, 0, 0.062); }
+
+.containter_ulAlimentos--textart:hover, .imgArticle:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.75s; }
+
+.main__sectionOne__divOne__salud {
+  background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
+  height: 100vh;
+  background-repeat: repeat;
+  background-size: cover; }
+  @media screen and (max-width: 960px) {
+    .main__sectionOne__divOne__salud {
+      height: 80vh; } }
+
+table {
+  font-size: 1.7vw;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+  border-radius: 6px;
+  padding: 1vw;
+  background-color: rgba(107, 79, 2, 0.11);
+  -webkit-text-stroke: 1px #dda25e63; }
+  @media screen and (max-width: 960px) {
+    table {
+      margin: auto;
+      font-size: 3vw; } }
+
+tr {
+  align-items: flex-end; }
+
+td {
+  color: #606c38;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #49494962; }
+
+img.veterinario--png {
+  width: 15vw;
+  height: 15vw; }
+  @media screen and (max-width: 960px) {
+    img.veterinario--png {
+      width: 32vw;
+      height: 32vw; } }
+
+.tabletext {
+  font-size: 1.3vw; }
+
+.veterinario--png:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.75s; }
+
+.tableFontSize {
+  font-size: 1.5vw; }
+  @media screen and (max-width: 960px) {
+    .tableFontSize {
+      font-size: 2.4vw; } }
+
+.main__sectionOne__divOne__accesorios {
+  background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
+  height: 130vh;
+  background-repeat: repeat;
+  background-size: cover; }
+  @media screen and (max-width: 960px) {
+    .main__sectionOne__divOne__accesorios {
+      height: 170vh; } }
+
+.contenedor__fotosDeLaSemana {
+  display: grid;
+  grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+  width: 100vw;
+  justify-content: center; }
+  @media screen and (max-width: 960px) {
+    .contenedor__fotosDeLaSemana {
+      grid-template-columns: 45vw 45vw;
+      grid-template-rows: 32vw 32vw 32vw; } }
+
+.fotosDeLaSemana--text {
+  margin-top: 0.1vw;
+  margin-left: 4vw;
+  margin-bottom: 0.5vw;
+  -webkit-text-stroke: 1px #dda25eab; }
+
+img.contenedor__fotosDeLaSemana--img {
+  width: 16vw;
+  height: 12vw;
+  padding: 1vw;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+  border-radius: 6px; }
+  @media screen and (max-width: 960px) {
+    img.contenedor__fotosDeLaSemana--img {
+      width: 40vw;
+      height: 30vw; } }
+
+.contenedor__fotosDeLaSemana--img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.75s; }
+
+.videoDeLaSemana--text {
+  margin-top: 1vw;
+  margin-left: 4vw;
+  -webkit-text-stroke: 1px #dda25eab; }
+
+h3 {
+  font-size: 2vw;
+  text-align: left;
+  color: #606c38; }
+
+.videoDeLaSemana--video {
+  display: grid;
+  margin: auto;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+  width: 30.24vw;
+  height: 17.01vw; }
+  @media screen and (max-width: 960px) {
+    .videoDeLaSemana--video {
+      width: 60.48vw;
+      height: 34.02vw; } }
+
+.btnContacto {
+  justify-content: center;
+  font-weight: 200;
+  color: #606c38;
+  text-shadow: 1px 1px 2px black, 0 0 1em;
+  margin: auto; }

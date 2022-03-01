@@ -6,25 +6,26 @@ html {
     padding: 0;
     font-family: sans-serif;    
 }
+
+header{
+    position: sticky;
+    top: 0px;
+    display: grid;
+    z-index: 2;
+    nav {
+        display: grid;
+        bottom: 70px;
+        color:$color-secundario;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
+}
 .index__grid__body{
     display: grid;
     .index__grid__header{
         display: grid;
         background-image: linear-gradient($color-primario,$color-terciario);
-        header{
-            position: sticky;
-            top: 0px;
-            display: grid;
-            z-index: 2;
-            nav {
-                display: grid;
-                bottom: 70px;
-                color:$color-secundario;
-                position: sticky;
-                top: 0px;
-                width: 100%;
-            }
-        }
         .button__block{
             button{
                 border-style: none;   
@@ -105,4 +106,10 @@ footer{
             }
         }
     }
+}
+h1{
+    font-size: 6vh;
+}
+ul{
+    margin: 0;
 }

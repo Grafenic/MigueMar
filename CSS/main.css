@@ -301,10 +301,20 @@ h2 {
   padding-bottom: 10px; }
   @media screen and (max-width: 960px) {
     h2 .h2 {
-      font-size: 10vw; } }
+      font-size: 5vw; } }
+  @media screen and (max-width: 960px) {
+    h2 {
+      font-size: 5vw; } }
 
 ul {
   padding-left: 0; }
+
+.btnContacto {
+  justify-content: center;
+  font-weight: 200;
+  color: #606c38;
+  text-shadow: 1px 1px 2px black, 0 0 1em;
+  margin: auto; }
 
 .main__sectionOne__divOne__alimentos {
   background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
@@ -428,6 +438,13 @@ img.veterinario--png {
   @media screen and (max-width: 960px) {
     .tableFontSize {
       font-size: 2.4vw; } }
+
+.btnContacto {
+  justify-content: center;
+  font-weight: 200;
+  color: #606c38;
+  text-shadow: 1px 1px 2px black, 0 0 1em;
+  margin: auto; }
 
 .main__sectionOne__divOne__accesorios {
   background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");

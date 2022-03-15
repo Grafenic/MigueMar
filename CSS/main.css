@@ -234,7 +234,7 @@ h2 {
 
 .main__sectionOne__divOne__accesorios {
   background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
-  height: 120vh;
+  height: 100vh;
   background-repeat: repeat;
   background-size: cover; }
   @media screen and (max-width: 768px) {
@@ -327,8 +327,8 @@ ul {
       height: 100vh; } }
   .main__sectionOne__divOne__alimentos .containter_ulAlimentos {
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
-    grid-template-rows: 9vw 9vw 9vw;
+    grid-template-columns: 16vw 16vw 16vw 16vw 16vw;
+    grid-template-rows: 12vw 12vw 12vw;
     grid-column-gap: 2vw;
     grid-row-gap: 1vw;
     justify-content: center;
@@ -337,8 +337,8 @@ ul {
     position: relative; }
     @media screen and (max-width: 960px) {
       .main__sectionOne__divOne__alimentos .containter_ulAlimentos {
-        grid-template-columns: 20vw 20vw 20vw 20vw;
-        grid-template-rows: 15vw 15vw 15vw 15vw;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-rows: 17vw 17vw 17vw 17vw;
         grid-column-gap: 1vw;
         grid-row-gap: 1vw;
         width: 100%; } }
@@ -352,7 +352,7 @@ ul {
       text-align: center;
       justify-items: center;
       padding-left: 0px;
-      width: 10vw;
+      width: 17vw;
       font-size: 1.4vw; }
       .main__sectionOne__divOne__alimentos .containter_ulAlimentos--textart img.imgArticle {
         width: 5vw;
@@ -446,14 +446,14 @@ img.veterinario--png {
   text-shadow: 1px 1px 2px black, 0 0 1em;
   margin: auto; }
 
-.main__sectionOne__divOne__accesorios {
+.main__sectionOne__divOne__multimedia {
   background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
   height: 130vh;
   background-repeat: repeat;
   background-size: cover; }
   @media screen and (max-width: 960px) {
-    .main__sectionOne__divOne__accesorios {
-      height: 170vh; } }
+    .main__sectionOne__divOne__multimedia {
+      height: 130vh; } }
 
 .contenedor__fotosDeLaSemana {
   display: grid;

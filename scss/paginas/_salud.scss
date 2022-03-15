@@ -1,0 +1,71 @@
+.main__sectionOne__divOne__salud {
+    background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
+    height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    @media screen and (max-width: 960px){
+        &{
+            height: 80vh;
+        }
+    }
+}
+table{
+    font-size: 1.7vw;
+    margin:auto;
+    text-align: center;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.664);
+    border-radius: 6px;
+    padding: 1vw;
+    background-color: rgba(107, 79, 2, 0.11);
+    -webkit-text-stroke: 1px #dda25e63;
+    @media screen and (max-width: 960px){
+        & {
+            margin: auto;
+            font-size: 3vw;
+        }
+    }
+}
+
+tr{
+    align-items: flex-end;
+}
+
+td {
+    color: $color-terciario;
+    font-weight: 600;
+    -webkit-text-stroke: 1px #49494962;
+}
+
+img.veterinario--png{
+    width: 15vw;
+    height: 15vw;
+    @media screen and (max-width: 960px){
+        & {
+            width: 32vw;
+            height: 32vw;
+        }
+    }
+}
+
+.tabletext{
+    font-size: 1.3vw;
+}
+.veterinario--png:hover {
+    transform: scale(1.1,1.1);
+    transition: 0.75s;
+}
+.tableFontSize{
+    font-size: 1.5vw;
+    @media screen and (max-width: 960px){
+        & {
+            font-size: 2.4vw;
+        }
+    }
+}
+.btnContacto{
+    justify-content: center;
+    font-weight: 200;
+    color: $color-terciario;
+    text-shadow: 1px 1px 2px black, 0 0 1em;
+    margin: auto;
+}

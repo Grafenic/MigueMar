@@ -1,0 +1,115 @@
+html {
+    font-size: 200%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;    
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    display: grid;
+    z-index: 2;
+    nav {
+        display: grid;
+        bottom: 70px;
+        color:$color-secundario;
+        position: sticky;
+        top: 0px;
+        width: 100%;
+    }
+}
+.index__grid__body{
+    display: grid;
+    .index__grid__header{
+        display: grid;
+        background-image: linear-gradient($color-primario,$color-terciario);
+        .button__block{
+            button{
+                border-style: none;   
+            }
+            display: grid;
+            position: relative;
+            justify-content: center;
+            .button__block__tituloH1{
+                position: relative;
+                font-size: 5vh;
+                text-align: center;
+            }
+            @media screen and (max-width: 768px) {
+                .button__block__tituloH1 {
+                    font-size: 8vw;
+                }
+            }
+            .logo{
+                align-items: center;
+                width: 12vh;
+                height: 12vh;
+            }
+        }
+        .contenedor__header {
+            list-style: none;
+            overflow: hidden;
+            display: block;
+            text-align: center;
+            &texto{
+                font-size: 2.2vw;
+                @include font-size-hyf-media;
+                &:hover, &:focus {
+                    background-size: 100% 2px;
+                }
+            }
+        }
+        .contenedor__header__texto{
+            @include animacion-subrayado    
+            &:hover, &:focus {
+                background-size: 100% 2px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: $color-secundario;
+            margin: auto;
+        }
+        li{
+            @include lista-hyf-media;
+        }
+    }
+}
+
+footer{
+    background-color:$color-cuaternario;
+    display: block;
+    z-index: 200;
+    .footer__section{
+        position: relative;
+        font-size: 1.8vw;
+        text-align: center;
+        margin: auto;
+        list-style: none;
+        display: block;
+        @include font-size-hyf-media;
+        li{
+            @include lista-hyf-media;
+        }
+        a{
+            text-decoration: none;
+            color: $color-secundario;
+            margin: auto;
+        }
+        .footer__section__link {
+            @include animacion-subrayado
+            &:hover, &:focus {
+                background-size: 100% 2px;
+            }
+        }
+    }
+}
+h1{
+    font-size: 6vh;
+}
+ul{
+    margin: 0;
+}

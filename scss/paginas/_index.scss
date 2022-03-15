@@ -1,0 +1,133 @@
+.index__grid__body{
+    display: grid;
+    
+    .main__sectionOne__accesorios{
+        @extend %SeccionesIndex;
+    }
+    .main__sectionOne__alimentos {
+        @extend %SeccionesIndex;
+    }
+    .main__sectionOne__salud {
+        @extend %SeccionesIndex;
+    }
+    .main__sectionOne__multimedia {
+        @extend %SeccionesIndex;
+    }
+    .main__sectionOne {
+        display: grid;
+        &__divOne {
+            background-image: Url("../Imagenes/fondo_1_imagen_index.jpg");
+            height: 100vh;
+            background-repeat: repeat;
+            background-size: cover;
+            .main_sectionOne--text {
+                display: grid;
+                grid-template-columns: 50vw;
+                grid-template-rows: 12vw;
+                justify-content: center;
+                margin-top: 3vw;
+                color: map-get($colores , terciario);
+                font-size: 2vw;
+                text-align: center;
+                text-shadow: 1px 1px 2px $color-secundario, 0 0 1em $color-secundario, 0 0 0.2em #283618;
+                @media screen and (max-width: 960px) {
+                    &{
+                    font-size: 4vw;
+                    grid-template-columns: 80vw;
+                    grid-template-rows: 30vw;
+                    }
+                }
+            }
+            .btnContacto{
+                justify-content: center;
+                font-weight: 200;
+                color: $color-terciario;
+                text-shadow: 1px 1px 2px black, 0 0 1em;
+                margin: auto;
+            }
+            &__two {
+                .imgindexcarousel:hover{
+                    transform: scale(1.2,1.2);
+                    transition: 0.75s;
+                }
+                img.imgindexcarousel {
+                    
+                    justify-content: center;
+                    margin-top: 0vw;
+                    margin-left: 0vw;
+                    margin-right: 0vw;
+                    width: 15vw;
+                    height: 15vw;
+                    box-shadow: 0px 4px 40px black;
+                    border-radius: 10px;
+                    background-color: rgba(107, 79, 2, 0.11);
+                    @media screen and (max-width:960px) {
+                        &{
+                            width: 32vw;
+                            height: 32vw;
+                        }
+                    }
+                }
+                display: grid;
+                grid-template-columns: 15vw 15vw 15vw;
+                grid-template-rows: 20vw;
+                grid-column-gap: 2vw;
+                align-items: flex-end;
+                justify-content: center;
+                @media screen and (max-width:960px) {
+                    &{
+                        margin-top: 10vw;
+                        display: grid;
+                        grid-template-columns: 32vw 32vw 32vw;
+                        grid-template-rows: 32vw;
+                        grid-column-gap: 2vw ;
+                    }   
+                }
+            }
+        }
+    }
+}
+body {
+    overflow-x: hidden;
+}
+h2.tituloFondo {
+    padding-top: 3vw;
+}
+
+div {
+    color: $color-terciario;
+}
+
+@media screen and (max-width: 960px){
+    .h2, .tituloFondo, .linkFondo--text {
+        font-size: 6vw;
+    }
+}
+.linkFondo--text {
+    color: $color-terciario;
+    text-align: center;
+    width: 100vw;
+    padding-top: 55vh;
+    position: absolute;
+    font-size: 2vw;
+    -webkit-text-stroke: 1px #000000ab;
+}
+a {
+    text-decoration: none;
+    color: $color-secundario;
+    margin: auto;
+}
+
+@media screen and (max-width: 960px){
+    .h2, .tituloFondo, .linkFondo--text {
+        font-size: 6vw;
+    }
+}
+h2 {
+    display: grid;
+    font-size: 3vw;
+    color: $color-terciario;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

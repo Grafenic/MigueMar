@@ -1,0 +1,36 @@
+
+Maps:
+se ultilizó un map y get-map en el archivo _index.scss en la linea 29 para traer un color de la pagina _variables.scss. El codigo se escribió de la siguiente manera:
+color: map-get($colores , terciario);
+
+Mixins:
+se encuentran en la pagina _variables.scss y se los cita en la pagina _accesorios.scss en las lineas 12 y 74.
+
+Extend:
+Se encuentra en la pagina _variable.scss y se lo cita en la pagina _index.scss en las lineas 5, 8, 11, y 14.
+
+SEO:
+Se cambiaron los titulos segun la pagina: quedaron representados de la siguiente forma:
+Index: <title>MIGUEMAR | Inicio</title>
+Accesorios: <title>MigueMar | Accesorios</title>
+Alimentos: <title>MigueMar | Alimentos</title>
+Salud: <title>MigueMar | Salud</title>
+Multimedia: <title>MigueMar | Multimedia</title>
+
+Se agregaron descriptions dentro de Head correctamente indentado:
+En index:
+<meta name="description" content="Venta de articulos para mascotas, contacto con veterinarios, asesoramiento sobre alimentos para animales,e informacion general sobre el cuidado animal.">
+En Accesorios:
+<meta name="description" content="Venta de accesorios para mascotas, para perros, aves, y gatos">
+En Alimentos:
+<meta name="description" content="Venta de alimentos para mascotas, tanto de perros, como gatos, y aves">
+En Salud:
+<meta name="description" content="Contato con veterinarios de animales exoticos y domesticos">
+En Multimedia:
+<meta name="description" content="Seleccion de videos y fotos de animales, e informacion de cuidado animal">
+
+Se agregaron Keywords en todas las paginas de forma similar:
+<meta name="keywords" content="perros,tienda,mascotas,articulos,animales,alimentos,accesorios,veterinario">
+
+
+
